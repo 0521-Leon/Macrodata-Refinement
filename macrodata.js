@@ -14,12 +14,12 @@ const files = [
 ];
 
 const emptyBins = [
-  {WO: 0, FC: 0, DR: 0, MA: 0},
-  {WO: 0, FC: 0, DR: 0, MA: 0},
-  {WO: 0, FC: 0, DR: 0, MA: 0},
-  {WO: 0, FC: 0, DR: 0, MA: 0},
-  {WO: 0, FC: 0, DR: 0, MA: 0}
- ];
+  { WO: 0, FC: 0, DR: 0, MA: 0 },
+  { WO: 0, FC: 0, DR: 0, MA: 0 },
+  { WO: 0, FC: 0, DR: 0, MA: 0 },
+  { WO: 0, FC: 0, DR: 0, MA: 0 },
+  { WO: 0, FC: 0, DR: 0, MA: 0 }
+];
 
 class MacrodataFile {
   constructor() {
@@ -36,14 +36,13 @@ class MacrodataFile {
     // const fileName = allFilesButPrevious[Math.floor(Math.random() * allFilesButPrevious.length)];
     // const coordinates = this.#generateCoordinates();
     // console.log('assigning', fileName);
-    // const macrodata = {
-    //   fileName,
-    //   storedBins: emptyBins,
-    //   coordinates
-    // }
-    // localStorage.setItem(this.localStorageKey, JSON.stringify(macrodata));
-    // return macrodata;
-    return 'Testing';
+    const macrodata = {
+      fileName: "TODO: Name",
+      storedBins: emptyBins,
+      coordinates: `CA: TODO`
+    }
+    localStorage.setItem(this.localStorageKey, JSON.stringify(macrodata));
+    return macrodata;
   }
 
   updateProgress(bins) {
@@ -65,13 +64,12 @@ class MacrodataFile {
 
   // private member fn to pick coordinates
   #generateCoordinates() {
-    // function randHex() {
-    //   return floor(random(0, 256)).toString(16).toUpperCase();
-    // }
-    // let x = randHex() + randHex() + randHex();
-    // let y = randHex() + randHex() + randHex();
-    
-    // return `0x${x} : 0x${y}`;
-    return `CA: 0x1234567890`;
+    function randHex() {
+      return floor(random(0, 256)).toString(16).toUpperCase();
+    }
+    let x = randHex() + randHex() + randHex();
+    let y = randHex() + randHex() + randHex();
+
+    return `0x${x} : 0x${y}`;
   }
 }

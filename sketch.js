@@ -193,7 +193,7 @@ function setup() {
     const msg = `In refining ${macrodataFile.coordinates} (${macrodataFile.fileName}) in ${timeStr} I have brought glory to the company.
 Praise Kier.
 ${thenumbers}#mdrlumon #severance 🧇🐐🔢💯
-lumon-industries.com`;
+TODO: lumon-industries.com`;
 
     // if (navigator.share) {
     //   console.log("using navigator share");
