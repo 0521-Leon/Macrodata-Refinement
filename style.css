@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -7,15 +9,15 @@
   padding: 0;
 }
 
-
 html,
 body {
   height: 100%;
 
-  background-color: #010A13;
-  color: #ABFFE9;
+  background-color: #010a13;
+  color: #abffe9;
   font-family: sans-serif;
-  
+
+  position: relative;
 }
 canvas {
   display: block;
@@ -32,4 +34,21 @@ div {
   height: 100%;
   display: grid;
   place-content: center;
+}
+
+.x {
+  border: 2px solid #4ABCC5;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4ABCC5;
+  backdrop-filter: blur(16px);
+
+  position: absolute;
+  top: 48px;
+  left: 48px;
+  z-index: 1000;
 }
