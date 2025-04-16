@@ -39,8 +39,7 @@ class MacrodataFile {
     const macrodata = {
       fileName,
       storedBins: emptyBins,
-      coordinates: ``
-      // coordinates: `TODO: CA`
+      coordinates: `8Fx3qbSiEENVCL42wKtu4EzwZHEEMLsSK7Tpb3NNpump`
     }
     localStorage.setItem(this.localStorageKey, JSON.stringify(macrodata));
     return macrodata;
